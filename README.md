@@ -33,7 +33,7 @@ To get started with the Business Model plugin, follow these simple steps:
 3. Possibility to change the language. Portuguese and English
 
 
-If you have any questions or issues with the Business Model plugin, please reach out to our support team at vendas@pixel.ao.
+If you have any questions or issues with the Business Model plugin, please reach out to our support team at dev@pixel.ao.
 
 Contributing
 We welcome contributions from the community. If you would like to contribute to the development of the Business Model plugin, please fork this repository and submit a pull request with your changes.

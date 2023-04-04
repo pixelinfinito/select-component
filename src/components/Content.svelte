@@ -47,7 +47,7 @@
         padding: 20px;
         height: fit-content;
         background-color: #fdf092;
-        flex: 1 0 calc(100% /4);
+        flex: 1 0 fit-content;
 	}
     .info span {
         display: block;
