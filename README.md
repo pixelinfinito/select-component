@@ -1,4 +1,5 @@
 # Business Model Plugin for Budibase
+<img src="https://github.com/edsonpixel/budibase-businessmodel/blob/main/images/capa.png" />
 The Business Model plugin for Budibase is a tool that allows users to create, manage, and visualize business models within the Budibase platform. This plugin is designed to be intuitive and user-friendly, enabling users to easily add, edit, and view various business elements such as customer segments, value propositions, distribution channels, revenue streams, and costs.
 
 ## Getting Started
