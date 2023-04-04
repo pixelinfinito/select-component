@@ -1,10 +1,15 @@
 <script>
     import {createEventDispatcher} from "svelte"
-
+    import {keyItems} from "../store"
     export let data
-
+    export let key
     const emit = createEventDispatcher()
-
+    $: {
+        keyItems.subscribe(e=>{
+            console.log(e[key], 'value store')
+            data = e[key] 
+        })
+    }
     function handleClick(item){
         emit('handleClick', {data: item.data})
     }
