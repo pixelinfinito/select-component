@@ -28,7 +28,7 @@
     .content{
         overflow-y: auto;
         height: calc(100% - 19%);
-        margin-top: 15px;
+        margin-top: -1px;
         padding: 10px;
 	}
     :global(
@@ -47,15 +47,16 @@
         padding: 20px;
         height: fit-content;
         background-color: #fdf092;
+        flex: 1 0 calc(100% /4);
 	}
     .info span {
         display: block;
     }
     :global(.row:last-child .content){
-        justify-content: space-between;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: start;
+        gap: 33px;
     }
     .content h3, .content span{
         text-align: left;

@@ -5,7 +5,7 @@
   import {keyItems} from "./store"
   import LinkIcon from "./icons/link-3-svgrepo-com.svg"
   import Chceck from "./icons/check-circle-svgrepo-com.svg"
-  import Gift from "./icons/gift.svg"
+  import Gift from "./icons/Gift.svg"
   import Heart from "./icons/heart-fill-svgrepo-com.svg"
   import Male from "./icons/male-face-icon.svg"
   import RourcesIcon from "./icons/manufacturing-process-engineer-icon.svg"
@@ -93,7 +93,7 @@
         <div class="child-col">
           <div class="head">
             <span >
-              {@html Chceck}
+              {@html RourcesIcon}
             </span>
             <span>{usageLanguage.keyResources}</span>
           </div>
@@ -103,7 +103,7 @@
       <div class="col">
         <div class="head">
           <span>
-            {@html LinkIcon}
+            {@html Gift}
           </span>
           <span>{usageLanguage.keyPropositions}</span>
         </div>
@@ -122,7 +122,7 @@
         <div class="child-col">
           <div class="head">
             <span >
-              {@html Chceck}
+              {@html Truck}
             </span>
             <span>{usageLanguage.keyChannels} </span>
           </div>
@@ -132,7 +132,7 @@
       <div class="col">
         <div class="head">
           <span >
-            {@html Chceck}
+            {@html Male}
           </span>
           <span>{usageLanguage.keySegments}</span>
         </div>
@@ -231,6 +231,7 @@
 		text-indent: 9px;
 	}
   .head{
+    padding: 8px;
     display: flex;
     align-items: center;
   }
