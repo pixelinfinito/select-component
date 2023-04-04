@@ -4,7 +4,6 @@ The Business Model plugin for Budibase is a tool that allows users to create, ma
 
 ## Getting Started
 To get started with the Business Model plugin, follow these simple steps:
-
 1. Install the plugin by navigating to the Budibase dashboard, selecting the Plugins tab, and  searching for "Business Model."
 
 2. Once the plugin is installed, navigate to the Business Model tab within the Budibase platform.
@@ -13,7 +12,6 @@ To get started with the Business Model plugin, follow these simple steps:
 4. Use the visualizer to view your model and how the various elements interconnect to form a complete business model.
 
 ## Features
-
 1. Easy-to-use interface for adding and managing business elements
 Real-time collaboration among users
 
