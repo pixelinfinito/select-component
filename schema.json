@@ -1,0 +1,47 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "businessmodel",
+    "friendlyName": "businessmodel",
+    "description": "The Business Model plugin for Budibase is a tool that allows users to easily and efficiently create, manage, and visualize business models. With this plugin, users can add various business elements such as customer segments, value propositions, distribution channels, revenue streams, and costs, and see how these elements interconnect to form a complete business model.",
+    "icon": "Text",
+    "settings": [
+      {
+        "type": "dataProvider",
+        "label": "DataProvider",
+        "key": "dataProvider",
+        "required": true
+      },
+      {
+        "type": "text",
+        "key": "mappingTitle",
+        "label": "Title Mapping"
+      },
+      {
+        "type": "text",
+        "key": "mappingDescription",
+        "label": "Description Mapping"
+      },
+      { 
+        "type": "select",
+        "key": "language",
+        "label": "Language",
+        "options": ["pt", "en"],
+        "defaultValue": "pt"
+      },
+      {
+        "type": "event",
+        "label": "On Click",
+        "key": "clickEvent",
+        "context": [
+          {
+            "label": "Clicked Event",
+            "key": "data",
+            "type": "object"
+          }
+        ]
+      }
+    ]
+  }
+}
