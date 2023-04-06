@@ -3,9 +3,9 @@
   "metadata": {},
   "schema": {
     "name": "businessmodel",
-    "friendlyName": "businessmodel",
+    "friendlyName": "Business Model Canvas",
     "description": "The Business Model plugin for Budibase is a tool that allows users to easily and efficiently create, manage, and visualize business models. With this plugin, users can add various business elements such as customer segments, value propositions, distribution channels, revenue streams, and costs, and see how these elements interconnect to form a complete business model.",
-    "icon": "Text",
+    "icon": "TableColumnSplit",
     "settings": [
       {
         "type": "dataProvider",
@@ -22,6 +22,12 @@
         "type": "text",
         "key": "mappingDescription",
         "label": "Description Mapping"
+      },
+      {
+        "type": "color",
+        "key": "cardColor",
+        "label": "cardsColor",
+        "defaultValue": "#fdf092"
       },
       { 
         "type": "select",

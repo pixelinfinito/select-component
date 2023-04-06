@@ -3,12 +3,14 @@
     import {keyItems} from "../store"
     export let data
     export let key
+    export let color
     const emit = createEventDispatcher()
     $: {
         keyItems.subscribe(e=>{
             console.log(e[key], 'value store')
             data = e[key] 
         })
+        console.log(color)
     }
     function handleClick(item){
         emit('handleClick', {data: item.data})
@@ -17,7 +19,7 @@
 </script>
 <div  class="content">
     {#each data as item}
-        <div on:click={handleClick(item)}  class="info">
+        <div on:click={handleClick(item)}  style={`background-color: ${color}`} class="info">
             <h3>{item.title}</h3>
             <span>{item.description}</span>
         </div>
@@ -46,7 +48,6 @@
         text-align: center;
         padding: 20px;
         height: fit-content;
-        background-color: #fdf092;
         flex: 1 0 fit-content;
 	}
     .info span {

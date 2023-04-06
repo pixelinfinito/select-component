@@ -20,10 +20,10 @@
   export let dataProvider
   export let mappingTitle
   export let mappingDescription
+  export let cardColor
   let usageLanguage = lang['pt']
   
   export let clickEvent
-
 
   let data = []
   
@@ -40,6 +40,7 @@
   }
 
   $: {
+    
     usageLanguage = lang[language ?? 'pt']
     if(dataProvider.rows){
       data = dataProvider.rows
@@ -78,7 +79,7 @@
           </span>
           <span> {usageLanguage.keyPartners }</span>
         </div>
-        <Content key={'keyPartners'} data={keys.keyPartners}   on:handleClick={(event)=> handleClick(event)} />
+        <Content color={cardColor ?? "#fdf092"} key={'keyPartners'} data={keys.keyPartners}   on:handleClick={(event)=> handleClick(event)} />
       </div>
       <div  class="col">
         <div class="child-col">
@@ -88,7 +89,7 @@
             </span>
             <span> {usageLanguage.keyActivites}</span>
           </div>
-          <Content key={'keyActivites'} data={keys.keyActivites}   on:handleClick={(event)=> handleClick(event)} />
+          <Content color={cardColor ?? "#fdf092"} key={'keyActivites'} data={keys.keyActivites}   on:handleClick={(event)=> handleClick(event)} />
         </div>
         <div class="child-col">
           <div class="head">
@@ -97,7 +98,7 @@
             </span>
             <span>{usageLanguage.keyResources}</span>
           </div>
-          <Content key={'keyResources'} data={keys.keyResources}   on:handleClick={(event)=> handleClick(event)} />
+          <Content color={cardColor ?? "#fdf092"} key={'keyResources'} data={keys.keyResources}   on:handleClick={(event)=> handleClick(event)} />
         </div>
       </div>
       <div class="col">
@@ -107,7 +108,7 @@
           </span>
           <span>{usageLanguage.keyPropositions}</span>
         </div>
-        <Content key={'keyPropositions'} data={keys.keyPropositions}   on:handleClick={(event)=> handleClick(event)} />
+        <Content  color={cardColor ?? "#fdf092"} key={'keyPropositions'} data={keys.keyPropositions}   on:handleClick={(event)=> handleClick(event)} />
       </div>
       <div class="col">
         <div class="child-col">
@@ -117,7 +118,7 @@
             </span>
             <span>{usageLanguage.keyRelationships}</span>
           </div>
-          <Content key={'keyRelationships'} data={keys.keyRelationships}   on:handleClick={(event)=> handleClick(event)} />
+          <Content color={cardColor ?? "#fdf092"} key={'keyRelationships'} data={keys.keyRelationships}   on:handleClick={(event)=> handleClick(event)} />
         </div>
         <div class="child-col">
           <div class="head">
@@ -126,7 +127,7 @@
             </span>
             <span>{usageLanguage.keyChannels} </span>
           </div>
-          <Content key={'keyChannels'} data={keys.keyChannels}   on:handleClick={(event)=> handleClick(event)} />
+          <Content color={cardColor ?? "#fdf092"} key={'keyChannels'} data={keys.keyChannels}   on:handleClick={(event)=> handleClick(event)} />
         </div>
       </div>
       <div class="col">
@@ -136,7 +137,7 @@
           </span>
           <span>{usageLanguage.keySegments}</span>
         </div>
-        <Content key={'keySegments'} data={keys.keySegments}   on:handleClick={(event)=> handleClick(event)} />
+        <Content color={cardColor ?? "#fdf092"} key={'keySegments'} data={keys.keySegments}   on:handleClick={(event)=> handleClick(event)} />
       </div>
 		</div>
 	
@@ -148,7 +149,7 @@
           </span>
           <span>{usageLanguage.keyStructure}</span>
         </div>
-        <Content key={'keyStructure'} data={keys.keyStructure}   on:handleClick={(event)=> handleClick(event)} />
+        <Content color={cardColor ?? "#fdf092"} key={'keyStructure'} data={keys.keyStructure}   on:handleClick={(event)=> handleClick(event)} />
       </div>
 			<div class="col">
         <div class="head">
@@ -157,7 +158,7 @@
           </span>
           <span>{usageLanguage.keyStreams}</span>
         </div>
-        <Content key={'keyStreams'} data={keys.keyStreams}   on:handleClick={(event)=> handleClick(event)} />
+        <Content color={cardColor ?? "#fdf092"} key={'keyStreams'} data={keys.keyStreams}   on:handleClick={(event)=> handleClick(event)} />
 			</div>
 		</div>
   </div>
