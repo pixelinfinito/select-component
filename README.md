@@ -38,5 +38,7 @@ If you have any questions or issues with the Business Model plugin, please reach
 Contributing
 We welcome contributions from the community. If you would like to contribute to the development of the Business Model plugin, please fork this repository and submit a pull request with your changes.
 
+## Find out more about [Budibase](https://github.com/Budibase/budibase).
+
 License
 The Business Model plugin is licensed under the MIT License.
