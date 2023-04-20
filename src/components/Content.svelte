@@ -4,6 +4,7 @@
     export let data
     export let key
     export let color
+    
     const emit = createEventDispatcher()
     $: {
         keyItems.subscribe(e=>{
