@@ -27,6 +27,13 @@ To get started with the Business Model plugin, follow these simple steps:
 
 4. Example: If I want to put a text in the field "<b>Key Partners</b>" I have to use the key "<b>keyPartners</b>"
 
+# How to map the data
+![image](https://user-images.githubusercontent.com/116651657/230389709-e1980907-fd83-4f02-b84d-8d305d002c92.png)
+
+<p>This plugin allows you to map some data that will appear, such as title and description. You can define any database column to be mapped to these fields.</p>
+
+
+ 
 ## Features
 1. Easy-to-use interface for adding and managing business elements Real-time collaboration among users
 2. Possibility to map title and description
