@@ -49,12 +49,6 @@
         "defaultValue": false 
       },
       {
-        "type": "text",
-        "key": "text",
-        "label": "Text",
-        "defaultValue": ""
-      },
-      {
         "type": "event",
         "label": "On Click",
         "key": "selectEvent",
