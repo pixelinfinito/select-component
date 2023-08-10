@@ -2,10 +2,10 @@
   "type": "component",
   "metadata": {},
   "schema": {
-    "name": "businessmodel",
-    "friendlyName": "Business Model Canvas",
+    "name": "budibase-svelte-select",
+    "friendlyName": "Budibase Svelte Select",
     "description": "The Business Model plugin for Budibase is a tool that allows users to easily and efficiently create, manage, and visualize business models. With this plugin, users can add various business elements such as customer segments, value propositions, distribution channels, revenue streams, and costs, and see how these elements interconnect to form a complete business model.",
-    "icon": "TableColumnSplit",
+    "icon": "Dropdown",
     "settings": [
       {
         "type": "dataProvider",
@@ -15,34 +15,52 @@
       },
       {
         "type": "text",
-        "key": "mappingTitle",
-        "label": "Title Mapping"
+        "key": "placeholder",
+        "label": "Placeholder",
+        "defaultValue": "Selecionar opções"
       },
       {
         "type": "text",
-        "key": "mappingDescription",
-        "label": "Description Mapping"
+        "key": "label",
+        "label": "Primary Name"
       },
       {
-        "type": "color",
-        "key": "cardColor",
-        "label": "cardsColor",
-        "defaultValue": "#fdf092"
+        "type": "boolean",
+        "key": "multiple",
+        "label": "Multiple",
+        "defaultValue": false
       },
-      { 
-        "type": "select",
-        "key": "language",
-        "label": "Language",
-        "options": ["pt", "en"],
-        "defaultValue": "pt"
+      {
+        "type": "boolean",
+        "key": "required",
+        "label": "Required",
+        "defaultValue": false
+      },
+      {
+        "type": "boolean",
+        "key": "disable",
+        "label": "Is Disabled",
+        "defaultValue": false 
+      },
+      {
+        "type": "boolean",
+        "key": "placeholderAlwaysShow",
+        "label": "Label Always Show",
+        "defaultValue": false 
+      },
+      {
+        "type": "text",
+        "key": "text",
+        "label": "Text",
+        "defaultValue": ""
       },
       {
         "type": "event",
         "label": "On Click",
-        "key": "clickEvent",
+        "key": "selectEvent",
         "context": [
           {
-            "label": "Clicked Event",
+            "label": "Clicked item",
             "key": "data",
             "type": "object"
           }
