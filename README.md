@@ -1,59 +1,86 @@
 # Budibase Select Component
 
 <img src="https://github.com/pixelinfinito/budibase-select-component/blob/main/select.png?raw=true" />
+
 ## Description
-It's a component to implement fullcalendar in your budibase.
+
+Budibase Select Component is a custom selection input component designed for seamless integration with Budibase applications. This component is built upon the https://github.com/pixelinfinito/budibase-select-component project and extends its functionality to cater to specific Budibase requirements.
 
 ## Installation
-To install the plugin for Budibase, follow these steps:
 
-1. Copy the repository link ```https://github.com/pixelinfinito/budibase-select-component```.
+To install the Budibase Select Component as a plugin for Budibase, follow these steps:
+
+1. Copy the repository link: `https://github.com/pixelinfinito/budibase-select-component`.
 2. Open Budibase and navigate to the "Plugins" section.
-3. Click add plugin.
-4. Select GitHub source.
-5. Put the link in the URL section
+3. Click "Add Plugin."
+4. Select "GitHub Source."
+5. Paste the copied link into the "URL" section.
 
+The plugin will be automatically installed within your Budibase project.
 
-<p>The plugin will be installed automatically.</p>
+## Usage
 
-## Use
+After successfully installing the Budibase Select Component plugin, you can start incorporating it into your application. This component enhances the selection input capabilities of Budibase, offering you extended options and customization.
 
-After installing the plugin for Budibase, you can start using it in your application. 
-The plugin adds select input and functionality to the platform.
+To use the component:
 
 1. First add a data source
-2. Add the calendar component inside the data source, you can search for Budibase Select Component
+1. **Import Component:**
+   - <img src="https://github.com/pixelinfinito/budibase-select-component/blob/main/Captura%20de%20ecr%C3%A3%202023-08-15%20095624.png?raw=true" />
+
+2. **Define Options:**
+   - <img src="https://github.com/pixelinfinito/budibase-select-component/blob/main/Capturadeecr%C3%A32023-08-15094427.png?raw=true" />
+
+3. **Callback Function:**
+   - Optionally, define a callback function for selection changes.
 
 ## Features
 
-1. Filter
-2. Define the name of the column that will be selected
-3. Disable input
-4. Call events on change
+Budibase Select Component offers the following features:
 
+1. **Multiselect:**
+   - Enable multiselect option for selecting multiple items.
 
+2. **Disabled State:**
+   - Disable the select input when needed.
+
+3. **Required Validation:**
+   - Set the select input as required for form validation.
+
+4. **Dataprovider Label:**
+   - Customize the label for the dataprovider.
+
+5. **Selection Change Callback:**
+   - Define a callback function to execute on selection changes.
 
 ## Contributing
 
-If you want to contribute to the development of the plugin, follow these steps:
+If you're interested in contributing to the Budibase Select Component, follow these steps:
 
 1. Fork this repository.
-2. Create a new branch with your changes: ```git checkout -b my-branch```
-3. Make the desired changes and commit: ```git commit -m 'my changes```
-4. Push your changes to your branch: ```git push origin my-branch```
-5. Open a Pull Request to the original repository.4
+2. Create a new branch for your changes: `git checkout -b my-branch`
+3. Make desired changes and commit: `git commit -m 'my changes'`
+4. Push changes to your branch: `git push origin my-branch`
+5. Open a Pull Request to the original repository.
 
+## Build Instructions
 
-## Instructions
-To build this plugin run the following in your Budibase CLI:
+To build this plugin, use the following command in your Budibase CLI:
 
-```budi plugins --build```
-You can also re-build everytime you make a change to your plugin with the command:
+```bash
+budi plugins --build
+```
 
-``` budi plugins --watch ```
+For automatic rebuilds on changes:
 
-## Known issues
+```bash
+budi plugins --watch
+```
 
-There are currently no known issues. If you encounter any problems using the plugin for Budibase, please open an issue in this repository and describe the problem in detail.
+## Known Issues
 
-## Find out more about [Budibase](https://github.com/Budibase/budibase).
+As of now, there are no known issues. If you encounter any problems while using the Budibase Select Component, please open an issue in this repository and provide a detailed description of the problem.
+
+## Learn More About Budibase
+
+For more information about Budibase, visit the [Budibase GitHub Repository](https://github.com/Budibase/budibase).
