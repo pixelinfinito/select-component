@@ -4,7 +4,7 @@
   "schema": {
     "name": "budibase-svelte-select",
     "friendlyName": "Budibase Svelte Select",
-    "description": "The Business Model plugin for Budibase is a tool that allows users to easily and efficiently create, manage, and visualize business models. With this plugin, users can add various business elements such as customer segments, value propositions, distribution channels, revenue streams, and costs, and see how these elements interconnect to form a complete business model.",
+    "description": "Budibase Select Component, developed with the Svelte Select library, introduces a robust and intuitive Select component to your Budibase applications. Designed with user experience in mind, this plugin ensures smooth interaction and seamless data integration.",
     "icon": "Dropdown",
     "settings": [
       {
@@ -22,7 +22,7 @@
       {
         "type": "text",
         "key": "label",
-        "label": "Primary Name"
+        "label": "Label column name"
       },
       {
         "type": "boolean",
@@ -30,12 +30,7 @@
         "label": "Multiple",
         "defaultValue": false
       },
-      {
-        "type": "boolean",
-        "key": "required",
-        "label": "Required",
-        "defaultValue": false
-      },
+      
       {
         "type": "boolean",
         "key": "disable",
@@ -45,16 +40,16 @@
       {
         "type": "boolean",
         "key": "placeholderAlwaysShow",
-        "label": "Label Always Show",
+        "label": "Keep showing label on multiselect",
         "defaultValue": false 
       },
       {
         "type": "event",
-        "label": "On Click",
+        "label": "On Change",
         "key": "selectEvent",
         "context": [
           {
-            "label": "Clicked item",
+            "label": "Selected Item",
             "key": "data",
             "type": "object"
           }

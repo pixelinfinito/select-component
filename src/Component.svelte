@@ -8,11 +8,10 @@
 
   export let multiple;
   export let dataProvider
-  export let label
+  export let label = ''
   export let disable
   export let selectEvent
   export let placeholder 
-  export let required
   export let placeholderAlwaysShow
 
   let items = []
@@ -32,6 +31,12 @@
       console.error("Error fetching data:", error);
     }
   }
+
+  $:{
+    console.log(label, 'changed value', placeholder)
+    fetchData()
+  }
+
  
   onMount(()=>{
    fetchData()
@@ -39,9 +44,23 @@
 
   async function handleSelectChange(event) {
     
-    const selectedValue = event.detail
-    const dataSend = JSON.parse(JSON.stringify(selectedValue?.item))
-    
+    const selectedValue = event.detail    
+    let itemSend = []
+    console.log(multiple)
+
+    if(multiple){
+      const result = selectedValue?.map((item)=>{
+        return {
+          ...item?.item
+        }
+      })
+      itemSend = result
+      console.log(result, 'result values')
+    }else{
+      itemSend = selectedValue?.item
+    }
+    const dataSend = JSON.parse(JSON.stringify(itemSend))
+    console.log(dataSend)
     await selectEvent({
       data: dataSend
     })
@@ -50,5 +69,5 @@
 </script>
 
 <div use:styleable={$component.styles}>
-  <Select disabled={disable} placeholderAlwaysShow={placeholderAlwaysShow} required={required} {items} placeholder={placeholder} multiple={multiple} class="foo bar" on:change={handleSelectChange} />
+  <Select disabled={disable} placeholderAlwaysShow={placeholderAlwaysShow}  {items} placeholder={placeholder} multiple={multiple} class="foo bar" on:change={handleSelectChange} />
 </div>
