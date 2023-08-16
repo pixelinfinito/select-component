@@ -2,8 +2,8 @@
   "type": "component",
   "metadata": {},
   "schema": {
-    "name": "budibase-svelte-select",
-    "friendlyName": "Budibase Svelte Select",
+    "name": "select-component",
+    "friendlyName": "Select Component",
     "description": "Budibase Select Component, developed with the Svelte Select library, introduces a robust and intuitive Select component to your Budibase applications. Designed with user experience in mind, this plugin ensures smooth interaction and seamless data integration.",
     "icon": "Dropdown",
     "settings": [

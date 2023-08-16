@@ -1,7 +1,7 @@
 {
-  "name": "budibase-svelte-select",
+  "name": "select-component",
   "version": "1.0.0",
-  "description": "businessmodel",
+  "description": "Budibase Select Component, developed with the Svelte Select library, introduces a robust and intuitive Select component to your Budibase applications. Designed with user experience in mind, this plugin ensures smooth interaction and seamless data integration.",
   "license": "MIT",
   "svelte": "index.js",
   "module": "dist/plugin.min.js",
