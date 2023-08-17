@@ -1,57 +1,48 @@
 # Budibase Select Component
 
-<img src="https://github.com/pixelinfinito/budibase-select-component/blob/main/select.png?raw=true" />
+https://github.com/pixelinfinito/select-component/assets/54587190/15b00590-f2ac-42f1-a662-001ae694bfad
 
-## Description
+## Overview
 
-Budibase Select Component is a custom selection input component designed for seamless integration with Budibase applications. This component is built upon the https://github.com/pixelinfinito/budibase-select-component project and extends its functionality to cater to specific Budibase requirements.
+The Budibase Select Component plugin is designed to extend Budibase's capabilities by adding a Select Component. This functionality allows users to select items from a dropdown select component, especially when it is nested under a Data Provider. Furthermore, "On Change" events can be set to trigger specific actions.
+
+For instance, consider a scenario with two tables - "Make" and "Cars". If a user wishes to display cars of a specific make, they can select the make from the dropdown list. Consequently, the table or another data provider updates to list only cars from the selected make. Given the component's seamless integration with built-in states, users can derive a multitude of functionalities.
 
 ## Installation
 
-To install the Budibase Select Component as a plugin for Budibase, follow these steps:
+To incorporate the Budibase Select Component into your Budibase project, please follow these steps:
 
-1. Copy the repository link: `https://github.com/pixelinfinito/budibase-select-component`.
-2. Open Budibase and navigate to the "Plugins" section.
-3. Click "Add Plugin."
-4. Select "GitHub Source."
-5. Paste the copied link into the "URL" section.
+1. Copy the following repository link: `https://github.com/pixelinfinito/budibase-select-component`.
+2. Launch Budibase and proceed to the "Plugins" section.
+3. Select the "Add Plugin" option.
+4. Choose the "GitHub Source".
+5. In the "URL" section, paste the previously copied link.
 
-The plugin will be automatically installed within your Budibase project.
-
-## Usage
-
-After successfully installing the Budibase Select Component plugin, you can start incorporating it into your application. This component enhances the selection input capabilities of Budibase, offering you extended options and customization.
-
-To use the component:
-
-1. First add a data source
-1. **Import Component:**
-   - <img src="https://github.com/pixelinfinito/budibase-select-component/blob/main/Captura%20de%20ecr%C3%A3%202023-08-15%20095624.png?raw=true" />
-
-2. **Define Options:**
-   - <img src="https://github.com/pixelinfinito/budibase-select-component/blob/main/Capturadeecr%C3%A32023-08-15094427.png?raw=true" />
-
-3. **Callback Function:**
-   - Optionally, define a callback function for selection changes.
+Post these steps, the plugin will be automatically integrated into your Budibase environment.
 
 ## Features
 
-Budibase Select Component offers the following features:
+![image](https://github.com/pixelinfinito/select-component/assets/54587190/07ccc9de-377f-4b15-b93d-a06da3b0d03f)
 
-1. **Multiselect:**
-   - Enable multiselect option for selecting multiple items.
+The Budibase Select Component is equipped with a variety of features:
+
+1. **Multiple:**
+   - Facilitates multiselect, enabling users to choose multiple items.
 
 2. **Disabled State:**
-   - Disable the select input when needed.
+   - Provides the option to disable the select input based on specific conditions or requirements.
 
-3. **Required Validation:**
-   - Set the select input as required for form validation.
+3. **Data Provider:**
+   - Designate the data provider from which the select component will obtain its data.
 
-4. **Dataprovider Label:**
-   - Customize the label for the dataprovider.
+4. **Keep showing label on multiselect:**
+   - Option to retain the placeholder text even when multiselect mode is active.
 
-5. **Selection Change Callback:**
-   - Define a callback function to execute on selection changes.
+5. **On selection change callback:**
+   - Configure specific actions to be executed when a selection undergoes a change.
+
+---
+
 
 ## Contributing
 
