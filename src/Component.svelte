@@ -16,7 +16,6 @@
   export let placeholderAlwaysShow
 
   let items = []
-  
   async function fetchData() {
     try {
       const response = dataProvider;
