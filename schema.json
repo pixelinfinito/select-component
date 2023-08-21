@@ -25,6 +25,11 @@
         "label": "Label column name"
       },
       {
+        "type": "text",
+        "key": "defaultValue",
+        "label": "Default value"
+      },
+      {
         "type": "boolean",
         "key": "multiple",
         "label": "Multiple",
@@ -50,6 +55,18 @@
         "context": [
           {
             "label": "Selected Item",
+            "key": "data",
+            "type": "object"
+          }
+        ]
+      },
+      {
+        "type": "event",
+        "label": "On Clear select",
+        "key": "onClear",
+        "context": [
+          {
+            "label": "Item removed",
             "key": "data",
             "type": "object"
           }

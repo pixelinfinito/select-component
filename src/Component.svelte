@@ -1,12 +1,11 @@
 <script>
-  import { getContext } from "svelte";
-  import Select from 'svelte-select';
-  import { onMount } from "svelte";
+  import { getContext } from "svelte"
+  import Select from 'svelte-select'
+  import { onMount } from "svelte"
  
-  const { styleable } = getContext("sdk"); 
-  const component = getContext("component");
+  const { styleable } = getContext("sdk")
+  const component = getContext("component")
 
-  
   export let multiple;
   export let dataProvider
   export let label = ''
@@ -14,13 +13,17 @@
   export let selectEvent
   export let placeholder 
   export let placeholderAlwaysShow
+  export let defaultValue
+  export let onClear
 
   let items = []
+
   async function fetchData() {
     try {
       const response = dataProvider;
       
       items = response?.rows?.map((item, index)=>{
+        console.log(item)
         return {
           value: item[label],
           label: item[label],
@@ -36,7 +39,6 @@
     console.log(label, 'changed value', placeholder)
     fetchData()
   }
-
  
   onMount(()=>{
    fetchData()
@@ -46,22 +48,31 @@
     
     const selectedValue = event.detail    
     let itemSend = []
-    console.log(multiple)
 
     if(multiple){
+      
       const result = selectedValue?.map((item)=>{
         return {
           ...item?.item
         }
       })
+
       itemSend = result
-      console.log(result, 'result values')
     }else{
       itemSend = selectedValue?.item
     }
     const dataSend = JSON.parse(JSON.stringify(itemSend))
-    console.log(dataSend)
+
     await selectEvent({
+      data: dataSend
+    })
+  }
+
+  async function handleClear(item){
+    console.log(item.detail)
+    const dataSend = JSON.parse(JSON.stringify(item.detail))
+
+    await onClear({
       data: dataSend
     })
   }
@@ -69,5 +80,5 @@
 </script>
 
 <div use:styleable={$component.styles}>
-  <Select disabled={disable} placeholderAlwaysShow={placeholderAlwaysShow}  {items} placeholder={placeholder} multiple={multiple} class="foo bar" on:change={handleSelectChange} />
+  <Select on:clear={handleClear} value={defaultValue}  disabled={disable} placeholderAlwaysShow={placeholderAlwaysShow}  {items} placeholder={placeholder} multiple={multiple} class="foo bar" on:change={handleSelectChange} />
 </div>
