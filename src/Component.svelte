@@ -15,6 +15,7 @@
   export let placeholderAlwaysShow
   export let defaultValue
   export let onClear
+  
 
   let items = []
 
