@@ -62,7 +62,7 @@
       },
       {
         "type": "event",
-        "label": "On Clear select",
+        "label": "On Clear",
         "key": "onClear",
         "context": [
           {

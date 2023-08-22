@@ -38,6 +38,7 @@
   $:{
     console.log(label, 'changed value', placeholder)
     fetchData()
+    console.log(styleable, 'theme')
   }
  
   onMount(()=>{
@@ -69,16 +70,14 @@
   }
 
   async function handleClear(item){
-    console.log(item.detail)
     const dataSend = JSON.parse(JSON.stringify(item.detail))
 
     await onClear({
       data: dataSend
     })
   }
-
 </script>
 
 <div use:styleable={$component.styles}>
-  <Select on:clear={handleClear} value={defaultValue}  disabled={disable} placeholderAlwaysShow={placeholderAlwaysShow}  {items} placeholder={placeholder} multiple={multiple} class="foo bar" on:change={handleSelectChange} />
+  <Select  on:clear={handleClear} value={defaultValue}  disabled={disable}  placeholderAlwaysShow={placeholderAlwaysShow}  {items} placeholder={placeholder} multiple={multiple} class="foo bar" on:change={handleSelectChange} />
 </div>
